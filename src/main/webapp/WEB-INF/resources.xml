@@ -1,0 +1,8 @@
+<resources>
+    <Service id="jsonJetisson" class-name="org.apache.cxf.jaxrs.provider.json.JSONProvider">
+        SkipJaxbChecks = true
+        DropRootElement = false
+        SupportUnwrapped = true
+        SingleJaxbContext = true
+    </Service>
+</resources>

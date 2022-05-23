@@ -12,6 +12,7 @@
 		<web-resource-collection>
 			<web-resource-name>MisLugares2021APIREST</web-resource-name>
 			<url-pattern>/lugares/*</url-pattern>
+			<http-method>GET</http-method>
 			<http-method>PUT</http-method>
 			<http-method>DELETE</http-method>
 			<http-method>PATCH</http-method>
@@ -21,11 +22,11 @@
 
 	</security-constraint>
 	
-	 <resource-ref>
+	<!--  <resource-ref>
       <description>DB Connection</description>
       <res-ref-name>jdbc/MYSQL-TOMEE</res-ref-name>
       <res-type>javax.sql.DataSource</res-type>
       <res-auth>Container</res-auth>
-  </resource-ref>
+  </resource-ref> -->
     
 </web-app>

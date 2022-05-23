@@ -3,6 +3,7 @@ package mislugaresapirestcdi.rest;
 import java.sql.SQLException;
 import java.util.List;
 
+import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.DELETE;
@@ -23,7 +24,7 @@ import mislugaresapirestcdi.modelo.Lugares;
 import mislugaresapirestcdi.servicios.MisLugaresServicio;
 
 
-
+@Stateless
 @Path("/lugares")
 @Produces(MediaType.APPLICATION_JSON)
 public class LugaresRest {
@@ -36,6 +37,7 @@ public class LugaresRest {
 	public LugaresRest() {
 		
 		//servicioLugares= new MisLugaresServicioImpl();
+		
 		
 	}
 
