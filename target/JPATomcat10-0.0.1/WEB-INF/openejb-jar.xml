@@ -8,7 +8,7 @@ xsi:schemaLocation="http://www.openejb.org/openejb-jar/1.1">
     <pojo-deployment  class-name="mislugaresapirestcdi.MisLugaresAplicacion">
       <!-- 
         <properties>
-         cxf.jaxrs.providers = jsonJetisson
+         cxf.jaxrs.providers =  com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider
         </properties>
         
          -->
