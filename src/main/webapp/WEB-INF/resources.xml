@@ -1,8 +1,13 @@
-<resources>
-    <Service id="jsonJetisson" class-name="org.apache.cxf.jaxrs.provider.json.JSONProvider">
-        SkipJaxbChecks = true
-        DropRootElement = false
-        SupportUnwrapped = true
-        SingleJaxbContext = true
-    </Service>
-</resources>
+<?xml version="1.0" encoding="UTF-8"?>
+<tomee>
+
+<Resource id="jdbc/mydatabase" type="DataSource">
+   JdbcDriver = com.mysql.cj.jdbc.Driver
+   JdbcUrl = jdbc:mysql://localhost:4200/mislugares?allowPublicKeyRetrieval=true&amp;useSSL=false
+   userName = lugares
+   Password = lugares
+   JtaManaged = true
+   DefaultAutoCommit = false
+</Resource>
+
+</tomee>
